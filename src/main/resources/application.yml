@@ -4,3 +4,11 @@ spring:
 
 server:
   port: 8090
+
+# stores 是自定义的
+stores:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8090,localhost:9092,localhost:9999
+    ServerListRefreshInterval: 15000
